@@ -1,4 +1,4 @@
-# Framwork  <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/9165c78a-f4ae-4e07-8a0f-7582e560b136" />
+# Framwork  <img width="244" height="244" alt="image" src="https://github.com/user-attachments/assets/9165c78a-f4ae-4e07-8a0f-7582e560b136" />
 
 
 Un framework PHP léger et dockerisé pour démarrer rapidement un site web sécurisé avec authentification.
