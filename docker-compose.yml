@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  php:
+    build: .
+    container_name: framework_php
+    volumes:
+      - ./html:/var/www/html
+      - ./php:/var/www/php
+      - ./logs:/var/log/php
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    container_name: framework_nginx
+    ports:
+      - "443:443"
+    volumes:
+      - ./html:/var/www/html
+      - ./conf/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./conf/certs:/etc/nginx/certs:ro
+      - ./logs:/var/log/nginx
+    depends_on:
+      - php
+    restart: unless-stopped
