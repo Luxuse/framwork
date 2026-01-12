@@ -26,8 +26,8 @@ Framework minimaliste offrant les fonctionnalités essentielles pour créer un s
 
 ```bash
 # Cloner le projet
-git clone https://github.com/votre-username/framework-php.git
-cd framework-php
+git clone https://github.com/votre-username/framwork.git
+cd framwork
 
 # Démarrer l'application
 docker compose up -d --build
